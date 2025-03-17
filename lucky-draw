@@ -1,0 +1,721 @@
+<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/lucky-draw/favicon.ico"><link rel="stylesheet" href="https://at.alicdn.com/t/font_1594571_5oi8u1hs5fy.css"><title>luckydraw</title><link href="/lucky-draw/css/app.e4465651.css" rel="preload" as="style"><link href="/lucky-draw/css/chunk-vendors.d39e9fad.css" rel="preload" as="style"><link href="/lucky-draw/js/app.d4e7f888.js" rel="preload" as="script"><link href="/lucky-draw/js/chunk-vendors.6207d9e8.js" rel="preload" as="script"><link href="/lucky-draw/css/chunk-vendors.d39e9fad.css" rel="stylesheet"><link href="/lucky-draw/css/app.e4465651.css" rel="stylesheet"><style type="text/css">@font-face {
+  font-family: "xm-iconfont";
+  src: url('//at.alicdn.com/t/font_792691_ptvyboo0bno.eot?t=1574048839056');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_792691_ptvyboo0bno.eot?t=1574048839056#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'), url('//at.alicdn.com/t/font_792691_ptvyboo0bno.woff?t=1574048839056') format('woff'), url('//at.alicdn.com/t/font_792691_ptvyboo0bno.ttf?t=1574048839056') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_792691_ptvyboo0bno.svg?t=1574048839056#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.xm-iconfont {
+  font-family: "xm-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.xm-icon-quanxuan:before {
+  content: "\e62c";
+}
+.xm-icon-caidan:before {
+  content: "\e610";
+}
+.xm-icon-fanxuan:before {
+  content: "\e837";
+}
+.xm-icon-pifu:before {
+  content: "\e668";
+}
+.xm-icon-qingkong:before {
+  content: "\e63e";
+}
+.xm-icon-sousuo:before {
+  content: "\e600";
+}
+.xm-icon-danx:before {
+  content: "\e62b";
+}
+.xm-icon-duox:before {
+  content: "\e613";
+}
+.xm-icon-close:before {
+  content: "\e601";
+}
+.xm-icon-expand:before {
+  content: "\e641";
+}
+.xm-icon-banxuan:before {
+  content: "\e60d";
+}
+</style><style type="text/css">@-webkit-keyframes xm-upbit {
+  from {
+    -webkit-transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes xm-upbit {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+xm-select {
+  background-color: #FFF;
+  position: relative;
+  border: 1px solid #E6E6E6;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+xm-select * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+xm-select:hover,
+xm-select:focus {
+  border-color: #C0C4CC;
+}
+xm-select > .xm-tips {
+  color: #999999;
+  padding: 0 10px;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+xm-select > .xm-icon {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+  cursor: pointer;
+  border: 6px dashed transparent;
+  border-top-color: #C2C2C2;
+  border-top-style: solid;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+xm-select > .xm-icon-expand {
+  margin-top: -9px;
+  transform: rotate(180deg);
+}
+xm-select > .xm-label.single-row {
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 30px;
+  overflow: auto hidden;
+}
+xm-select > .xm-label.single-row .scroll {
+  overflow-y: hidden;
+}
+xm-select > .xm-label.single-row .label-content {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+xm-select > .xm-label.auto-row .label-content {
+  flex-wrap: wrap;
+  padding-right: 30px !important;
+}
+xm-select > .xm-label.auto-row .xm-label-block > span {
+  white-space: unset;
+  height: 100%;
+}
+xm-select > .xm-label .scroll .label-content {
+  display: flex;
+  padding: 3px 10px;
+}
+xm-select > .xm-label .xm-label-block {
+  display: flex;
+  position: relative;
+  padding: 0px 5px;
+  margin: 2px 5px 2px 0;
+  border-radius: 3px;
+  align-items: baseline;
+  color: #FFF;
+}
+xm-select > .xm-label .xm-label-block > span {
+  display: flex;
+  color: #FFF;
+  white-space: nowrap;
+}
+xm-select > .xm-label .xm-label-block > i {
+  color: #FFF;
+  margin-left: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+}
+xm-select > .xm-label .xm-label-block.disabled {
+  background-color: #C2C2C2 !important;
+  cursor: no-drop !important;
+}
+xm-select > .xm-label .xm-label-block.disabled > i {
+  cursor: no-drop !important;
+}
+xm-select > .xm-body {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  padding: 5px 0;
+  z-index: 999;
+  width: 100%;
+  min-width: fit-content;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  animation-name: xm-upbit;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+xm-select > .xm-body .scroll-body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+xm-select > .xm-body .scroll-body::-webkit-scrollbar {
+  width: 8px;
+}
+xm-select > .xm-body .scroll-body::-webkit-scrollbar-track {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  border-radius: 2em;
+  background-color: #FFF;
+}
+xm-select > .xm-body .scroll-body::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  border-radius: 2em;
+  background-color: #C2C2C2;
+}
+xm-select > .xm-body.up {
+  top: auto;
+  bottom: 42px;
+}
+xm-select > .xm-body.relative {
+  position: relative;
+  display: block !important;
+  top: 0;
+  box-shadow: none;
+  border: none;
+  animation-name: none;
+  animation-duration: 0;
+  min-width: 100%;
+}
+xm-select > .xm-body .xm-group {
+  cursor: default;
+}
+xm-select > .xm-body .xm-group-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #999;
+  font-size: 12px;
+}
+xm-select > .xm-body .xm-option {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+  cursor: pointer;
+}
+xm-select > .xm-body .xm-option-icon {
+  color: transparent;
+  display: flex;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+}
+xm-select > .xm-body .xm-option-icon.xm-custom-icon {
+  color: unset;
+  border: unset;
+}
+xm-select > .xm-body .xm-option-icon-hidden {
+  margin-right: -10px;
+}
+xm-select > .xm-body .xm-option-icon.xm-icon-danx {
+  border-radius: 100%;
+}
+xm-select > .xm-body .xm-option-content {
+  display: flex;
+  position: relative;
+  padding-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  ;
+  width: calc(100% - 20px);
+}
+xm-select > .xm-body .xm-option.hide-icon .xm-option-content {
+  padding-left: 0;
+}
+xm-select > .xm-body .xm-option.selected.hide-icon .xm-option-content {
+  color: #FFF !important;
+}
+xm-select > .xm-body .xm-option .loader {
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 6px;
+  color: #C2C2C2;
+}
+xm-select > .xm-body .xm-select-empty {
+  text-align: center;
+  color: #999;
+}
+xm-select > .xm-body .disabled {
+  cursor: no-drop;
+}
+xm-select > .xm-body .disabled:hover {
+  background-color: #FFF;
+}
+xm-select > .xm-body .disabled .xm-option-icon {
+  border-color: #C2C2C2 !important;
+}
+xm-select > .xm-body .disabled .xm-option-content {
+  color: #C2C2C2 !important;
+}
+xm-select > .xm-body .disabled.selected > .xm-option-icon {
+  color: #C2C2C2 !important;
+}
+xm-select > .xm-body .xm-search {
+  background-color: #FFF !important;
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+xm-select > .xm-body .xm-search > i {
+  position: absolute;
+  color: ;
+}
+xm-select > .xm-body .xm-search-input {
+  border: none;
+  border-bottom: 1px solid #E6E6E6;
+  padding-left: 27px;
+  cursor: text;
+}
+xm-select > .xm-body .xm-paging {
+  padding: 0 10px;
+  display: flex;
+  margin-top: 5px;
+}
+xm-select > .xm-body .xm-paging > span:first-child {
+  border-radius: 2px 0 0 2px;
+}
+xm-select > .xm-body .xm-paging > span:last-child {
+  border-radius: 0 2px 2px 0;
+}
+xm-select > .xm-body .xm-paging > span {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0 -1px 0 0;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  border: 1px solid #e2e2e2;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+  min-width: 50px;
+}
+xm-select > .xm-body .xm-toolbar {
+  padding: 0 10px;
+  display: flex;
+  margin: -3px 0;
+  cursor: default;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag {
+  cursor: pointer;
+  display: flex;
+  margin-right: 20px;
+  color: ;
+  align-items: baseline;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag:hover {
+  opacity: 0.8;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag:active {
+  opacity: 1;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag > i {
+  margin-right: 2px;
+  font-size: 14px;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag:last-child {
+  margin-right: 0;
+}
+xm-select > .xm-body .xm-body-custom {
+  line-height: initial;
+  cursor: default;
+}
+xm-select > .xm-body .xm-body-custom * {
+  box-sizing: initial;
+}
+xm-select > .xm-body .xm-tree {
+  position: relative;
+}
+xm-select > .xm-body .xm-tree-icon {
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+  border: 6px dashed transparent;
+  border-left-color: #C2C2C2;
+  border-left-style: solid;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  z-index: 2;
+  visibility: hidden;
+}
+xm-select > .xm-body .xm-tree-icon.expand {
+  margin-top: 3px;
+  margin-right: 5px;
+  margin-left: -2px;
+  transform: rotate(90deg);
+}
+xm-select > .xm-body .xm-tree-icon.xm-visible {
+  visibility: visible;
+}
+xm-select > .xm-body .xm-tree .left-line {
+  position: absolute;
+  left: 13px;
+  width: 0;
+  z-index: 1;
+  border-left: 1px dotted #c0c4cc !important;
+}
+xm-select > .xm-body .xm-tree .top-line {
+  position: absolute;
+  left: 13px;
+  height: 0;
+  z-index: 1;
+  border-top: 1px dotted #c0c4cc !important;
+}
+xm-select > .xm-body .xm-tree .xm-tree-icon + .top-line {
+  margin-left: 1px;
+}
+xm-select > .xm-body .scroll-body > .xm-tree > .xm-option > .top-line,
+xm-select > .xm-body .scroll-body > .xm-option > .top-line {
+  width: 0 !important;
+}
+xm-select > .xm-body .xm-cascader-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5px 0;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  margin: -1px;
+}
+xm-select > .xm-body .xm-cascader-box::before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #E6E6E6;
+  top: 10px;
+  left: -12px;
+}
+xm-select > .xm-body .xm-cascader-box::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  top: 10px;
+  left: -11px;
+}
+xm-select > .xm-body .xm-cascader-scroll {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+xm-select > .xm-body.cascader {
+  width: unset;
+  min-width: unset;
+}
+xm-select > .xm-body.cascader .xm-option-content {
+  padding-left: 8px;
+}
+xm-select > .xm-body.cascader .disabled .xm-right-arrow {
+  color: #C2C2C2 !important;
+}
+xm-select > .xm-body.cascader .hide-icon.disabled .xm-right-arrow {
+  color: #999 !important;
+}
+xm-select .xm-input {
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #E6E6E6;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFF;
+  line-height: 1.3;
+  padding-left: 10px;
+  outline: 0;
+  user-select: text;
+  -ms-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+xm-select .dis {
+  display: none;
+}
+xm-select .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+xm-select .loader {
+  border: 0.2em dotted currentcolor;
+  border-radius: 50%;
+  -webkit-animation: 1s loader linear infinite;
+  animation: 1s loader linear infinite;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: inherit;
+  vertical-align: middle;
+  pointer-events: none;
+}
+xm-select .xm-select-default {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  visibility: hidden;
+}
+xm-select .xm-select-disabled {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: no-drop;
+  z-index: 2;
+  opacity: 0.3;
+  background-color: #FFF;
+}
+xm-select .item--divided {
+  border-top: 1px solid #ebeef5;
+  width: calc(100% - 20px);
+  cursor: initial;
+}
+xm-select .xm-right-arrow {
+  position: absolute;
+  color: ;
+  right: 5px;
+  top: -1px;
+  font-weight: 700;
+  transform: scale(0.6, 1);
+}
+xm-select .xm-right-arrow::after {
+  content: '>';
+}
+xm-select[size='large'] {
+  min-height: 40px;
+  line-height: 40px;
+}
+xm-select[size='large'] .xm-input {
+  height: 40px;
+}
+xm-select[size='large'] .xm-label .scroll .label-content {
+  line-height: 34px;
+}
+xm-select[size='large'] .xm-label .xm-label-block {
+  height: 30px;
+  line-height: 30px;
+}
+xm-select[size='large'] .xm-body .xm-option .xm-option-icon {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+xm-select[size='large'] .xm-paging > span {
+  height: 34px;
+  line-height: 34px;
+}
+xm-select[size='large'] .xm-tree .left-line {
+  height: 100%;
+  bottom: 20px;
+}
+xm-select[size='large'] .xm-tree .left-line-group {
+  height: calc(100% - 40px);
+}
+xm-select[size='large'] .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 19px;
+}
+xm-select[size='large'] .item--divided {
+  margin: 10px;
+}
+xm-select {
+  min-height: 36px;
+  line-height: 36px;
+}
+xm-select .xm-input {
+  height: 36px;
+}
+xm-select .xm-label .scroll .label-content {
+  line-height: 30px;
+}
+xm-select .xm-label .xm-label-block {
+  height: 26px;
+  line-height: 26px;
+}
+xm-select .xm-body .xm-option .xm-option-icon {
+  height: 18px;
+  width: 18px;
+  font-size: 18px;
+}
+xm-select .xm-paging > span {
+  height: 30px;
+  line-height: 30px;
+}
+xm-select .xm-tree .left-line {
+  height: 100%;
+  bottom: 18px;
+}
+xm-select .xm-tree .left-line-group {
+  height: calc(100% - 36px);
+}
+xm-select .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 17px;
+}
+xm-select .item--divided {
+  margin: 9px;
+}
+xm-select[size='small'] {
+  min-height: 32px;
+  line-height: 32px;
+}
+xm-select[size='small'] .xm-input {
+  height: 32px;
+}
+xm-select[size='small'] .xm-label .scroll .label-content {
+  line-height: 26px;
+}
+xm-select[size='small'] .xm-label .xm-label-block {
+  height: 22px;
+  line-height: 22px;
+}
+xm-select[size='small'] .xm-body .xm-option .xm-option-icon {
+  height: 16px;
+  width: 16px;
+  font-size: 16px;
+}
+xm-select[size='small'] .xm-paging > span {
+  height: 26px;
+  line-height: 26px;
+}
+xm-select[size='small'] .xm-tree .left-line {
+  height: 100%;
+  bottom: 16px;
+}
+xm-select[size='small'] .xm-tree .left-line-group {
+  height: calc(100% - 32px);
+}
+xm-select[size='small'] .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 15px;
+}
+xm-select[size='small'] .item--divided {
+  margin: 8px;
+}
+xm-select[size='mini'] {
+  min-height: 28px;
+  line-height: 28px;
+}
+xm-select[size='mini'] .xm-input {
+  height: 28px;
+}
+xm-select[size='mini'] .xm-label .scroll .label-content {
+  line-height: 22px;
+}
+xm-select[size='mini'] .xm-label .xm-label-block {
+  height: 18px;
+  line-height: 18px;
+}
+xm-select[size='mini'] .xm-body .xm-option .xm-option-icon {
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+}
+xm-select[size='mini'] .xm-paging > span {
+  height: 22px;
+  line-height: 22px;
+}
+xm-select[size='mini'] .xm-tree .left-line {
+  height: 100%;
+  bottom: 14px;
+}
+xm-select[size='mini'] .xm-tree .left-line-group {
+  height: calc(100% - 28px);
+}
+xm-select[size='mini'] .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 13px;
+}
+xm-select[size='mini'] .item--divided {
+  margin: 7px;
+}
+.layui-form-pane xm-select {
+  margin: -1px -1px -1px 0;
+}
+</style></head><body class="" style=""><div style="width: 0px; height: 0px; position: absolute; z-index: 200000;"></div><noscript><strong>We're sorry but luckydraw doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="root"><header><div class="c-Publicity" style=""><div class="el-carousel el-carousel--horizontal"><div class="el-carousel__container" style="height: 50px;"><!----><!----><div class="el-carousel__item is-animating" style="transform: translateX(-725px) scale(1);"><!----><div class="item actiname"><span class="title"> 年会抽奖</span><!----></div></div><div class="el-carousel__item is-active is-animating" style="transform: translateX(0px) scale(1);"><!----><div class="item"><span class="title"> 一等奖抽奖结果:</span><span class="value"> 41、66、4 </span></div></div><div class="el-carousel__item" style="transform: translateX(725px) scale(1);"><!----><div class="item"><span class="title"> 二等奖抽奖结果:</span><span class="value"> 37、21、2、39、52 </span></div></div></div><!----></div></div><button type="button" class="el-button res el-button--text"><!----><!----><span> 抽奖结果 </span></button><button type="button" class="el-button con el-button--text"><!----><!----><span> 抽奖配置 </span></button></header><div id="main" class="mask"><canvas width="906" height="791" id="rootcanvas"></canvas></div><div id="tags" style="display: none;"><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 41 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 28 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 49 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 4 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 38 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 61 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 51 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 20 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 1 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 63 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 11 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 12 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 9 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 66 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 44 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 47 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 45 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 10 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 43 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 22 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 19 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 65 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 8 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 23 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 34 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 16 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 32 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 37 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 14 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 6 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 58 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 55 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 40 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 36 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 29 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 21 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 64 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 2 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 7 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 50 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 46 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 60 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 69 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 5 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 35 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 56 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 25 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 53 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 3 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 39 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 30 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 70 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 31 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 62 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 54 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 42 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 68 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 59 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 17 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 27 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 67 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 33 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 52 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 13 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 57 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 48 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 18 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 15 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 24 <!----></a></li></ul><ul><li><a href="javascript:void(0);" style="color: rgb(255, 255, 255);"> 26 <!----></a></li></ul></div><div id="resbox" style=""><p>二等奖抽奖结果：</p><div class="container"><span data-id="37" class="itemres" style="font-size: 100px;"><span class="cont"><span> 37 </span></span><!----></span><span data-id="21" class="itemres" style="font-size: 100px;"><span class="cont"><span> 21 </span></span><!----></span><span data-id="2" class="itemres" style="font-size: 100px;"><span class="cont"><span> 2 </span></span><!----></span><span data-id="39" class="itemres" style="font-size: 100px;"><span class="cont"><span> 39 </span></span><!----></span><span data-id="52" class="itemres" style="font-size: 100px;"><span class="cont"><span> 52 </span></span><!----></span></div></div><button type="button" class="el-button audio el-button--text"><!----><!----><span><i class="iconfont iconstop"></i></span></button><div id="tool"><button type="button" class="el-button el-button--primary el-button--mini"><!----><!----><span>开始</span></button><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 重置 </span></button><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 导入名单 </span></button><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span> 导入照片 </span></button><div class="el-dialog__wrapper import-dialog" style="display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 400px;"><div class="el-dialog__header"><span class="el-dialog__title"></span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><!----><!----></div></div><div class="el-dialog__wrapper c-Importphoto" style="display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 300px;"><div class="el-dialog__header"><span class="el-dialog__title"></span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><!----><!----></div></div><div class="el-dialog__wrapper c-removeoptions" style="display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 300px;"><div class="el-dialog__header"><span class="el-dialog__title"></span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><!----><!----></div></div></div><div class="el-dialog__wrapper c-Result" style="display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 600px;"><div class="el-dialog__header"><div class="dialog-title"><span style="font-size: 18px;"> 抽奖结果 </span><span style="font-size: 14px; color: rgb(153, 153, 153); margin-left: 10px;"> (点击号码可以删除) </span></div><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><!----><!----></div></div><span class="copy-right"> Copyright©zhangyongfeng5350@gmail.com </span><audio id="audiobg" preload="auto" controls="controls" autoplay="autoplay" loop="loop" __idm_id__="1490945"><source src="/lucky-draw/media/bg.6fab370c.mp3"> 你的浏览器不支持audio标签 </audio></div><script src="/lucky-draw/js/chunk-vendors.6207d9e8.js"></script><script src="/lucky-draw/js/app.d4e7f888.js"></script><doubao-ai-csui id="73af4bcd9bc4446582c61eb2bc93e41c" data-host-id="e1105fe4-a9b4-4759-aea7-ebc6c1f4bd7e"></doubao-ai-csui><div id="doubao-ai-translate-image-assistante1105fe4-a9b4-4759-aea7-ebc6c1f4bd7e" data-collection-img-host-id="e1105fe4-a9b4-4759-aea7-ebc6c1f4bd7e"></div><div id="doubao-ai-assistant" aria-label="flow-ai-assistant" aria-description="" style="width: 0px; height: 0px; position: absolute; top: 0px; left: 0px; overflow: hidden;"></div><div contenteditable="false" id="-aichat-mirrorTextNode" style="position: absolute; width: 0px; height: 0px; overflow: hidden;"></div><div contenteditable="false" id="-aichat-mirrorTextNode" style="position: absolute; width: 0px; height: 0px; overflow: hidden;"></div><div class="el-dialog__wrapper dialog-showAddLottery" style="z-index: 2028; display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 300px;"><div class="el-dialog__header"><div class="add-title">增加奖项</div><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><div class="el-dialog__body"><form class="el-form"><div class="el-form-item el-form-item--mini"><label class="el-form-item__label">奖项名称</label><div class="el-form-item__content"><div class="el-input el-input--mini"><!----><input type="text" autocomplete="off" class="el-input__inner"><!----><!----><!----><!----></div><!----></div></div><div class="el-form-item el-form-item--mini"><!----><div class="el-form-item__content"><button type="button" class="el-button el-button--primary el-button--mini"><!----><!----><span>增加奖项</span></button><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span>取消</span></button><!----></div></div></form></div><!----></div></div><div contenteditable="false" id="-aichat-mirrorTextNode" style="position: absolute; width: 0px; height: 0px; overflow: hidden;"></div><div contenteditable="false" id="-aichat-mirrorTextNode" style="position: absolute; width: 0px; height: 0px; overflow: hidden;"></div><div class="el-dialog__wrapper c-LotteryConfig" style="z-index: 2030; display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 390px;"><div class="el-dialog__header"><div class="c-LotteryConfigtitle"><span style="font-size: 16px; margin-right: 20px;"> 抽奖配置 </span><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span>增加奖项</span></button><button type="button" class="el-button el-button--primary el-button--mini"><!----><!----><span>保存配置</span></button><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span>取消</span></button></div><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><div class="el-dialog__body"><div class="container"><form class="el-form"><div class="el-form-item el-form-item--mini"><label class="el-form-item__label">抽奖标题</label><div class="el-form-item__content"><div class="el-input el-input--mini"><!----><input type="text" autocomplete="off" class="el-input__inner"><!----><!----><!----><!----></div><!----></div></div><div class="el-form-item el-form-item--mini"><label class="el-form-item__label">抽奖总人数</label><div class="el-form-item__content"><div class="el-input el-input--mini"><!----><input type="number" autocomplete="off" min="1" step="1" class="el-input__inner"><!----><!----><!----><!----></div><!----></div></div><div class="el-form-item el-form-item--mini"><label class="el-form-item__label">一等奖</label><div class="el-form-item__content"><div class="el-input el-input--mini"><!----><input type="number" autocomplete="off" min="0" step="1" class="el-input__inner"><!----><!----><!----><!----></div><!----></div></div><div class="el-form-item el-form-item--mini"><label class="el-form-item__label">二等奖</label><div class="el-form-item__content"><div class="el-input el-input--mini"><!----><input type="number" autocomplete="off" min="0" step="1" class="el-input__inner"><!----><!----><!----><!----></div><!----></div></div><div class="el-form-item el-form-item--mini"><label class="el-form-item__label">三等奖</label><div class="el-form-item__content"><div class="el-input el-input--mini"><!----><input type="number" autocomplete="off" min="0" step="1" class="el-input__inner"><!----><!----><!----><!----></div><!----></div></div></form></div></div><!----></div></div><div class="el-select-dropdown el-popper" style="min-width: 0px; transform-origin: center top; z-index: 2035; display: none;"><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -5px; margin-right: -5px;"><ul class="el-scrollbar__view el-select-dropdown__list"><!----><li class="el-select-dropdown__item"><span>抽1人</span></li><li class="el-select-dropdown__item"><span>抽5人</span></li><li class="el-select-dropdown__item selected hover"><span>一次抽取完</span></li><li class="el-select-dropdown__item"><span>自定义</span></li></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!----><div x-arrow="" class="popper__arrow" style="left: 35px;"></div></div><div class="el-dialog__wrapper setwat-dialog" style="z-index: 2037; display: none;"><div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 15vh; width: 400px;"><div class="el-dialog__header"><span class="el-dialog__title"></span><button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button></div><div class="el-dialog__body"><form class="el-form"><div class="el-form-item el-form-item--mini"><label class="el-form-item__label" style="width: 80px;">抽取奖项</label><div class="el-form-item__content" style="margin-left: 80px;"><div class="el-select el-select--mini"><!----><div class="el-input el-input--mini el-input--suffix"><!----><input type="text" readonly="readonly" autocomplete="off" placeholder="请选取本次抽取的奖项" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----><!----><!----><!----></span><!----></span><!----><!----></div></div><!----></div></div><div class="el-form-item el-form-item--mini"><label class="el-form-item__label" style="width: 80px;"> </label><div class="el-form-item__content" style="margin-left: 80px;"><span> 共 <span class="colorred">5</span> 名 </span><span style="margin-left: 20px;"> 剩余 <span class="colorred">0</span> 名 </span><!----></div></div><div class="el-form-item el-form-item--mini"><label class="el-form-item__label" style="width: 80px;">抽取方式</label><div class="el-form-item__content" style="margin-left: 80px;"><div class="el-select el-select--mini"><!----><div class="el-input el-input--mini el-input--suffix"><!----><input type="text" readonly="readonly" autocomplete="off" placeholder="请选取本次抽取方式" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----><!----><!----><!----></span><!----></span><!----><!----></div></div><!----></div></div><!----><div class="el-form-item el-form-item--mini"><label class="el-form-item__label" style="width: 80px;">全员参与</label><div class="el-form-item__content" style="margin-left: 80px;"><div role="switch" class="el-switch"><input type="checkbox" name="" true-value="true" class="el-switch__input"><!----><span class="el-switch__core" style="width: 40px;"></span><!----></div><span style="font-size: 12px;"> (开启后将在全体成员[无论有无中奖]中抽奖) </span><!----></div></div><div class="el-form-item el-form-item--mini"><!----><div class="el-form-item__content" style="margin-left: 80px;"><button type="button" class="el-button el-button--primary el-button--mini"><!----><!----><span>立即抽奖</span></button><button type="button" class="el-button el-button--default el-button--mini"><!----><!----><span>取消</span></button><!----></div></div></form></div><!----></div></div><div class="el-select-dropdown el-popper" style="min-width: 0px; transform-origin: center top; z-index: 2039; display: none;"><div class="el-scrollbar" style=""><div class="el-select-dropdown__wrap el-scrollbar__wrap" style="margin-bottom: -5px; margin-right: -5px;"><ul class="el-scrollbar__view el-select-dropdown__list"><!----><li class="el-select-dropdown__item"><span>一等奖</span></li><li class="el-select-dropdown__item selected hover"><span>二等奖</span></li><li class="el-select-dropdown__item"><span>三等奖</span></li></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div></div></div><!----><div x-arrow="" class="popper__arrow" style="left: 35px;"></div></div></body></html>
