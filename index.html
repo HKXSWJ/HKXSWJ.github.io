@@ -1,7 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客 | 分类</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* 基础样式 */
+        body {
+            margin: 0;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        /* 头部样式 */
+        .header {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+        
+        .site-title {
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        /* 导航菜单 */
+        .menu {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .menu-item {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        
+        /* 分类列表 */
+        .category-all-page {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .category-all-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .category-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .category-list-item {
+            margin: 10px 0;
+        }
+        
+        .category-list-count {
+            color: #999;
+            margin-left: 5px;
+        }
+        
+        /* 侧边栏 */
+        .sidebar {
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            width: 300px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. I come from CCNU</p>
+    <header class="header">
+        <h1 class="site-title">我的博客</h1>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="/"><i class="fa fa-home"></i> 首页</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/categories"><i class="fa fa-th"></i> 分类</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/archives"><i class="fa fa-archive"></i> 归档</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/about"><i class="fa fa-user"></i> 关于</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="category-all-page">
+            <div class="category-all-title">
+                目前共计 8 个分类
+            </div>
+            <div class="category-all">
+                <ul class="category-list">
+                    <li class="category-list-item">
+                        <a class="category-list-link" href="/categories/前端/">前端</a>
+                        <span class="category-list-count">(12)</span>
+                    </li>
+                    <li class="category-list-item">
+                        <a class="category-list-link" href="/categories/后端/">后端</a>
+                        <span class="category-list-count">(8)</span>
+                    </li>
+                    <li class="category-list-item">
+                        <a class="category-list-link" href="/categories/数据库/">数据库</a>
+                        <span class="category-list-count">(5)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="site-author">
+            <img src="/images/avatar.jpg" alt="作者头像">
+            <p class="site-author-name">博主</p>
+            <p class="site-description">记录学习与生活</p>
+        </div>
+        
+        <div class="site-state">
+            <div class="site-state-item">
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">文章</span>
+            </div>
+            <div class="site-state-item">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+            </div>
+            <div class="site-state-item">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+            </div>
+        </div>
+    </aside>
 </body>
 </html>
